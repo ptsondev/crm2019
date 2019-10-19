@@ -1,0 +1,250 @@
+
+.pq-grid{
+	box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.75);
+	margin-bottom: 12px;    
+}    
+div.pq-toolbar button
+{
+    margin:0px 5px;
+    padding: 5px; 
+}
+button.delete_btn
+{
+    margin:-3px 0px;
+}
+tr.pq-row-delete
+{
+    text-decoration:line-through;         
+}
+tr.pq-row-delete td
+{
+    background-color:pink;   
+}
+span.saving
+{
+    display:none;
+    font-size:large;
+    background:yellow;
+    color:Red;
+    font-weight:normal;
+    margin-left:20px;
+}
+
+
+.pq-toolbar .pq-select-button
+    {
+        padding:4px 5px;
+        min-width:200px;     
+    }
+    .pq-select-popup-cont
+    {
+        max-width:200px;
+    }
+
+
+div.selecttheme-div{
+    margin-right:20px;
+}
+/*code
+{
+    background:#eee;
+    color:#333;
+    border:1px dotted lightblue;
+}*/
+body{
+    /*background:url(@Url.Content("~/pro2/Content/images/grid2.png"));*/
+    background:url("../images/grid2.png");
+    font-family: arial;
+    /*margin-top:50px;*//*causes issue with jqueryui datepicker positioning with fixed navbar*/
+}
+.container-logo
+{
+    position:relative;
+    /*margin-top:50px;*//*causes issue with jqueryui datepicker positioning with fixed navbar*/
+    padding-top:70px;
+    padding-bottom:20px;
+}
+.container-body
+{
+    min-height:600px;
+    border-radius:8px;
+    position:relative;
+    background:#fff;
+    padding-top:40px;
+    padding-bottom:30px;    
+    border:1px solid lightblue;
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, .30);
+}
+@media screen and (min-width: 1000px) {
+    .container-body{
+        margin:0 2%;
+    }
+}
+.navbar
+{
+    box-shadow: 1px 1px 5px 0px rgba(200, 200, 200, 0.75);
+}
+#leftPane
+{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+    padding-right: 0;
+    border-right: 1px solid lightblue;
+}
+#leftPaneInner
+{    
+    overflow: auto; 
+    position: absolute; 
+    width: 100%; 
+    top: 50px; bottom: 0; left: 0; 
+    padding: 15px;
+}
+#rightPane
+{
+    min-height: 600px;
+    padding-left: 265px;
+}
+#btnSubmit{
+    width: 100%;
+    margin: 10px 0;
+
+}
+/*@media (max-width: 850px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }  
+}*/
+/*this causes issue with collapse.
+@media (max-width: 850px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}*/
+.navbar .divider-vertical {
+height: 50px;
+margin: 0 9px;
+border-right: 1px solid #ffffff;
+border-left: 1px solid #e2e2e2;
+}
+
+.navbar-inverse .divider-vertical {
+border-right-color: #222222;
+border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+.navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+
+.page-print form label{
+    width:130px;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;    
+}
+.page-print form input,
+.page-print form select{
+    width:120px;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+#tbResult td {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+.showTCDetail{
+    color:deepskyblue;
+    cursor: pointer;
+} 
+#f-timeline .item{
+    margin-bottom: 15px;
+}
+#f-timeline label{
+    width: 170px;
+    display: inline-block;
+}
+#f-timeline .num{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: red;
+    color:#FFF;
+    padding: 5px 9px;
+}
+#f-timeline .num.done{
+    background: green;
+}
+
+#header-right{
+    float: right;
+    margin-right: 20px;
+}
+#header-right a,
+#header-left a{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#page-title{
+    text-align: center;
+}
+#page-title b{
+    color: green;
+}
+
+#btnUpdateTimeline{
+    background: green;
+    padding: 8px;
+    color:#FFF;
+    width: 100%;
+    font-size:16px;
+    cursor: pointer;;
+}
+#result{
+    margin-top: 30px;
+    font-style: italic;
+}
+.showTimeline{
+    color: deepskyblue;
+    cursor: pointer;
+}
+#tbResult td.title{
+    text-align: center;
+    background: #cecece;
+    font-weight: bold;
+}
